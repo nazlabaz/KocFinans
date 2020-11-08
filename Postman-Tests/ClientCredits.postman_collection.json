@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "bbc1748d-1660-43d1-8433-c9dd130d8819",
+		"name": "ClientCredits",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/clients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t\t{\"id\" :12,\r\n\t\t\"firstName\" :\"eda\",\r\n\t\t\"lastName\" :\"oya\",\r\n\t\t\"phoneNo\" :\"25698748\",\r\n\t\t\"income\" : 4000,\r\n\t\t\"creditScore\" : 600\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients"
+					]
+				},
+				"description": "Create client"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/clients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t\t{\r\n\t\t\"firstName\" :\"eda\",\r\n\t\t\"lastName\" :\"oya\",\r\n\t\t\"phoneNo\" :\"25698748\",\r\n\t\t\"income\" : 4000,\r\n\t\t\"creditScore\" : 600\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/client/credit/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"credit",
+						"12"
+					]
+				},
+				"description": "Client credit request - Onay"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/clients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t\t{\r\n  \r\n\t\t\"firstName\" :\"eda\",\r\n\t\t\"lastName\" :\"ela\",\r\n\t\t\"phoneNo\" :\"25698748\",\r\n\t\t\"income\" : 600,\r\n\t\t\"creditScore\" : 300\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/client/credit/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"credit",
+						"11"
+					]
+				},
+				"description": "Create client for RED"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/clients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t\t{\r\n  \r\n\t\t\"firstName\" :\"eda\",\r\n\t\t\"lastName\" :\"ela\",\r\n\t\t\"phoneNo\" :\"25698748\",\r\n\t\t\"income\" : 600,\r\n\t\t\"creditScore\" : 300\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/client/credit/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"credit",
+						"11"
+					]
+				},
+				"description": "Client credit request - RED"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
